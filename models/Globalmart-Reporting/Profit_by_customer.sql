@@ -1,6 +1,6 @@
 Select productname,
 category,
-subcategory,,sum(orderprofit) as customerprofit 
+subcategory,sum(orderprofit) as customerprofit 
 
 from {{ ref("stage_raworders") }}
 
