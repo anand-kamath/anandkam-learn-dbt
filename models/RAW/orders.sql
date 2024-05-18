@@ -4,4 +4,4 @@ config(materialized = 'table')
 
 }}
 
-Select * from RAW.GLOBALMART.ORDERS
+Select * from {{source("GLOBALMART",'orders') }}
